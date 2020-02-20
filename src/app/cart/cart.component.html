@@ -1,0 +1,15 @@
+<h3>Cart</h3>
+
+<div class="cart-item" *ngFor="let item of items ">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+  <button (click)="del(item)">delete</button>
+</div>
+<h3>total: ${{total}}</h3>
+<button (click)="clear()">clear order</button>
+  	<a 
+       [routerLink]="['']"
+    >back</a>
+<p>
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>

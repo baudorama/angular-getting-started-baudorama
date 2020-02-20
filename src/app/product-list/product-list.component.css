@@ -1,0 +1,19 @@
+
+.item {
+  border: 1px solid gray;
+  padding: 10px;
+  margin:10px;
+}
+  
+  .item button {
+    margin:10px;
+  }
+
+.item:hover {
+  background-color:rgb(239, 239, 247);
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

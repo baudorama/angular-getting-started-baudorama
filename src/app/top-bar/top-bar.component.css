@@ -1,0 +1,47 @@
+div,i {
+color:white;
+text-align:center;
+margin-right: 0;
+}
+
+.top-bar {
+  width: 100%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar h1 {
+  color: white;
+  margin: 0;
+}
+
+
+.menubar {
+  padding:3px;
+  padding-left:20px;
+ display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #1976d2;
+
+}
+
+.menubar button {
+  width:100px;
+  height: 30px;
+}
+
+.menubar button:hover {
+  background-color: #4490db;
+}
+
+.cart-button {
+  width:300px;
+}
+
+ /* {border: 1px solid red;} */

@@ -1,0 +1,30 @@
+<div class="top-bar">
+
+  	<div>
+		<i *ngIf="loadingStatus==true; else elseBlock" class="material-icons icon-rotate" >cached
+</i>
+		<ng-template #elseBlock>
+			<i class="material-icons">cached</i>
+		</ng-template>
+	</div>
+
+
+
+	<a [routerLink]="['']">
+		<h1>My Store</h1>
+	</a>
+	<a [routerLink]="['/cart']" class="button fancy-button cart-button"><i class="material-icons">shopping_cart</i>({{totalItems}})
+		(${{total}}) </a>
+
+
+</div>
+
+<div class="menubar">
+	<button routerLink="">home</button>
+  <button routerLink="/cart">cart</button>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
