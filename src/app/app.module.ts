@@ -12,6 +12,7 @@ import { CartComponent } from "./cart/cart.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ShippingComponent } from "./shipping/shipping.component";
 import { LoadingService } from "./loading.service";
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { LoadingService } from "./loading.service";
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: "", component: ProductListComponent },
+      { path: "", component: TodoComponent },
+      { path: "store", component: ProductListComponent },
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent }
@@ -32,7 +34,8 @@ import { LoadingService } from "./loading.service";
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    TodoComponent
   ],
   bootstrap: [AppComponent],
   providers: [LoadingService]
