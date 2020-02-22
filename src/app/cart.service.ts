@@ -5,7 +5,7 @@ import { Subject, Observable, of, Subscription } from "rxjs";
 import { LoadingService } from "./loading.service";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root" 
 })
 export class CartService {
   items = [];
